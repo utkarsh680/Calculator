@@ -1,11 +1,14 @@
 body{
     display: flex;
     justify-content: center;
-  
- background-color: #c0c6d4;
+    background-color: #c0c6d4;
+    transition: all 0.3s ease-in-out;
     background-size: cover;
     position: relative;
     top:20vh;
+}
+body.dark{
+    background-color: #181819;
 }
 
 #screen{
@@ -16,7 +19,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transition: all 0.3s ease-in-out;
 ;
+   
+}
+
+#screen.dark{
+    background-color: rgba(255, 255, 255, 0.9);
    
 }
 #screen-input{
@@ -34,8 +43,14 @@ body{
     font-size: 1.6rem; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
     
 }
+#screen-input.dark{
+    background-color: #e8e8e8;
+    color:#323030;
+}
+
 input:focus {
     outline: none;
 }
@@ -45,24 +60,29 @@ input[type="text"] {
 #screen-result{
     display: flex;
     justify-content: end;
-    position: relative;
-    
+    position: relative; 
+    transition: all 0.3s ease-in-out;
     left:5%;
     height:40px;
     width: 225px;
-  overflow: hidden;
-background-color: #3f4956;
+    overflow: hidden;
+    background-color: #3f4956;
     border:none;
     color: white;
     font-size: 2.5rem;
     font-family: 'Courier New', Courier, monospace;
+}
 
-   
-  }
-.mode{
+
+#screen-result.dark{
+        background-color: #e8e8e8;
+        color: black;
+      
+ }
+
+#mode{
     height: 38px;
     width: 47px;
-    
     background-color: #596271;
     border-radius: 18px 0px 14px 10px;
     margin: 15px;
@@ -70,6 +90,12 @@ background-color: #3f4956;
    justify-content: center;
    align-items: center;
 }
+#mode img{
+    height: 20px;
+    width: 20px;
+}
+
+
 
 .button-row{
     display: flex;
