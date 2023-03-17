@@ -1,19 +1,22 @@
 var buttons = document.getElementsByClassName('button');
 var display = document.getElementById('screen-input');
-var oprand1 = 0;
-var oprand2 = null;
-var operator = null;
-for(var i = 0; i < buttons.length; i++){
-    buttons[i].addEventListener('click', function(){
-        var value = this.getAttribute('value');
-        console.log(value);
-        if(value == '+'){
-        }
-        else if(value == '-'){
-        }
-        else if(value == 'X'){
 
-        }
-        
-    });
+function button(num){
+    console.log(num);
+    display.value+= num;
+}
+function Clear(){
+    console.log("hhh")
+    display.value = "";
+}
+function Calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(err){
+        display.value = "Error";
+    }
+}
+function Del(){
+    display.value = value.substr(0,value.length-1);
 }

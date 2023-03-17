@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First PHP Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <div class="mode">&</div>
+      <input type="text" id="screen-input" placeholder="0" />
+      <div class="button-row">
+        <button onclick="Clear()" class="grey-box button">C</button>
+        <button onclick="Del()" class="grey-box button">del</button>
+        <button onclick="button('%')" class="grey-box button">%</button>
+        <button onclick="button('/')" class="orange-box button">/</button>
+        <button onclick="button('7')" class="button">7</button>
+        <button onclick="button('8')" class="button">8</button>
+        <button onclick="button('9')" class="button">9</button>
+        <button onclick="button('9')" class="orange-box button">*</button>
+        <button onclick="button('4')" class="button">4</button>
+        <button onclick="button('5')" class="button">5</button>
+        <button onclick="button('6')" class="button">6</button>
+        <button onclick="button('-')" class="orange-box button">-</button>
+        <button onclick="button('1')" class="button">1</button>
+        <button onclick="button('2')" class="button">2</button>
+        <button onclick="button('3')" class="button">3</button>
+        <button value="+" onclick="button('+')" class="orange-box button">
+          +
+        </button>
+        <button
+          onclick="button('0')"
+          class="button"
+          style="height: 50px; width: 104px"
+          value="0"
+        >
+          0
+        </button>
+        <button onclick="button('.')" class="button">.</button>
+        <button onclick="Calculate()" class="orange-box button">=</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
