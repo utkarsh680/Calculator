@@ -1,13 +1,17 @@
 body{
     display: flex;
     justify-content: center;
-    margin-top: 14%;
-    background-color: rgb(169, 55, 55);
+  
+ background-color: #c0c6d4;
+    background-size: cover;
+    position: relative;
+    top:20vh;
 }
+
 #screen{
-    height: 490px;
-    width: 230px;
-    background-color: rgba(14, 14, 16, 0.4);
+    height: 530px;
+    width: 260px;
+    background-color: rgba(49,60,72, 0.9);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -21,13 +25,15 @@ body{
     position: relative;
     top: 3%;
     left:5%;
-    height: 70px;
-    width: 196px;
-  overflow: hidden;
-  background-color:#6b2727 ;
+    height: 40px;
+    width: 225px;
+    overflow: hidden;
+    background-color: #3f4956;
     border:none;
-    color: grey;
-    font-size: 1.7rem;
+    color: rgb(166, 162, 162);
+    font-size: 1.6rem; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     
 }
 input:focus {
@@ -36,11 +42,28 @@ input:focus {
 input[type="text"] {
     text-align: right;
   }
+#screen-result{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    
+    left:5%;
+    height:40px;
+    width: 225px;
+  overflow: hidden;
+background-color: #3f4956;
+    border:none;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+
+   
+  }
 .mode{
     height: 38px;
     width: 47px;
     
-    background-color: rgb(152, 152, 164);
+    background-color: #596271;
     border-radius: 18px 0px 14px 10px;
     margin: 15px;
     display: flex;
@@ -51,20 +74,21 @@ input[type="text"] {
 .button-row{
     display: flex;
     justify-content: center;
-    width: 230px;
+    width: 260px;
     flex-wrap: wrap;
    
 }
 button{  
-    height: 50px;
-    width: 50px;
+    height: 56px;
+    width: 56px;
     box-shadow:  inset 2px 2px 5px #323030,inset -2px -2px 5px #524e4e;
-    background: linear-gradient(145deg, rgb(96, 96, 101), #393636);;
+    background: linear-gradient(145deg, rgb(72, 76, 88),rgb(53, 56, 69));;
     border-radius: 15px;
     margin:1.9px;
     border:none;  
     color: white;
     font-size: 17px;
+    cursor: pointer;
  
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -72,12 +96,12 @@ button{
    
     color: white;
     font-size: 17px;
-    box-shadow:  inset 2px 2px 5px #a6afb0,inset -2px -2px 5px #4e5455;
-    background: linear-gradient(145deg, rgb(137, 137, 160), #7b8e97);;
+    box-shadow:  inset 2px 2px 5px #97a2a3,inset -2px -2px 5px #484848;
+    background: linear-gradient(145deg, #5f6a7b, #5f6a7b);;
     
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .button-row .orange-box{
-    box-shadow:  inset 3px 3px  3px rgb(231, 179, 82),inset -3px -3px 3px rgb(197, 136, 24) ;
-    background: linear-gradient(145deg, rgb(210, 141, 13), rgb(244, 166, 31));;
+    box-shadow:  inset 3px 3px  3px rgb(241, 171, 42),inset -3px -3px 3px rgb(197, 136, 24) ;
+    background: linear-gradient(145deg, #ca681d, rgb(251, 166, 19));;
 }
